@@ -1,0 +1,98 @@
+/*** General ***/
+
+.carouselcc ul li {
+	position: relative;
+}
+.carouselcc .slidercc-title,
+.carouselcc .slidercc-desc {
+	position: absolute;
+}
+.carouselcc .slidercc-title {
+	top: 10%;
+	left: 7%;
+}
+.carouselcc .slidercc-desc {
+	bottom: 0;
+	left: 0;
+}
+
+/*** Header ***/
+
+.carouselcc .slidercc-title, .carouselcc .slidercc-title h2 {
+	font-family: 'Oswald', sans-serif!important;
+	font-weight: 700 !important;
+	font-size: 20px !important;
+	line-height: 25px !important;
+	text-transform: uppercase !important;
+}
+.carouselcc .slidercc-title h2 {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+/*** Description ***/
+
+.carouselcc .slidercc-desc, .carouselcc .slidercc-desc p {
+	width: 100%;
+	font-family: 'Open Sans', sans-serif!important;
+	font-weight: 400!important;
+	font-size: 12px!important;
+	line-height: 16px!important;
+	text-align: center!important;
+}
+.carouselcc .slidercc-desc p {
+	padding: 0!important;
+	margin: 0!important;
+}
+.carouselcc .slidercc-desc {
+	padding: 0 5px 0 5px;
+}
+
+/*** Link ***/
+
+.carouselcc a, .slidercc a:hover {
+	text-decoration: none;
+}
+
+/*** Arrows ***/
+
+.carouselcc .scc-arrows > a.scc-next {
+	right: 0px!important;
+}
+.carouselcc .scc-arrows > a.scc-prev {
+	left: 0px!important;
+}
+.carouselcc .scc-arrows > a.scc-next:before,
+.carouselcc .scc-arrows > a.scc-prev:before
+ {
+	display: block;
+	width: 10px;
+	height: 16px;
+}
+.carouselcc .scc-arrows > a.scc-next:before {
+	right: 15px;
+}
+.carouselcc .scc-arrows > a.scc-prev:before {
+	left: 15px;
+}
+.carouselcc .scc-arrows > a.scc-disabled:before,
+.carouselcc .scc-arrows > a.scc-disabled:hover:before
+ {
+  background: transparent;
+}
+
+/*** Pagination ***/
+
+.carouselcc .scc-pagination > a {
+	width: 6px !important;
+	height: 6px !important;
+	border-radius: 6px !important;
+	vertical-align: middle;
+}
+.carouselcc .scc-pagination > a.scc-active {
+	width: 10px !important;
+	height: 10px !important;
+	border-radius: 10px !important;
+	background: #fff !important;
+	border: 2px solid #191919 !important;
+}

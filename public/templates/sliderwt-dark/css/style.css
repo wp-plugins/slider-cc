@@ -1,0 +1,47 @@
+/*** General ***/
+
+
+
+/*** Header ***/
+
+.sliderwt.dark .slidercc-title, .sliderwt.dark .slidercc-title h2 {
+	color: #191919;
+}
+
+/*** Description ***/
+
+.sliderwt.dark .slidercc-desc {
+	color: #191919;
+}
+
+/*** Link ***/
+
+.sliderwt.dark  a, .sliderwt.dark  a:hover {
+  color: #191919;
+}
+
+/*** Arrows ***/
+
+.sliderwt.dark .scc-arrows > a.scc-next:before,
+.sliderwt.dark .scc-arrows > a.scc-prev:before {
+  color: #191919;
+}
+
+/*** Pagination ***/
+
+.sliderwt.dark .scc-pagination > a {
+  background: #191919!important;
+}
+.sliderwt.dark .scc-pagination > a.scc-active {
+  background: #fff!important;
+}
+.sliderwt.dark .scc-pagination > a:hover {
+  background: #d3d3d3!important;
+}
+
+
+/*** Thumbnails ***/
+
+.sliderccth.dark .slides > li.scc-active:after {
+    border: 2px solid #191919!important;
+}

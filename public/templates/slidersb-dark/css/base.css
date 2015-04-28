@@ -1,0 +1,88 @@
+/*** General ***/
+
+.slidersb ul li {
+	position: relative!important;
+}
+
+/*** Header ***/
+
+.slidersb .slidercc-title {
+	position: absolute;
+	top: 10%;
+	left: 7%;
+	width: 40%;
+}
+
+.slidersb .slidercc-title, .slidersb .slidercc-title h2 {
+	font-family: 'Oswald', sans-serif!important;
+	font-weight: 700!important;
+	font-size: 23px!important;
+	line-height: 28px!important;
+	text-transform: uppercase!important;
+	text-align: center!important;
+}
+.slidersb .slidercc-title h2  {
+	padding: 20px 10px 10px 10px!important;
+	margin: 0!important;
+}
+
+/*** Description ***/
+
+.slidersb .slidercc-desc, .slidersb .slidercc-desc p {
+	font-family: 'Open Sans', sans-serif!important;
+	font-weight: 400!important;
+	font-size: 12px!important;
+	line-height: 18px!important;
+	text-transform: none!important;
+	text-align: center!important;
+}
+.slidersb .slidercc-desc p {
+	padding: 0!important;
+	margin: 0!important;
+}
+.slidersb .slidercc-desc {
+	padding: 7px 20px 20px 20px;
+}
+
+/*** Link ***/
+
+.slidersb a, .slidercc a:hover {
+	text-decoration: none;
+}
+
+/*** Arrows ***/
+
+.slidersb .scc-arrows > a.scc-next:before,
+.slidersb .scc-arrows > a.scc-prev:before
+ {
+	display: block;
+	width: 10px;
+	height: 16px;
+}
+.slidersb .scc-arrows > a.scc-next:before {
+	right: 15px;
+}
+.slidersb .scc-arrows > a.scc-prev:before {
+	left: 15px;
+}
+.slidersb .scc-arrows > a.scc-disabled:before,
+.slidersb .scc-arrows > a.scc-disabled:hover:before
+ {
+  background: transparent;
+}
+
+/*** Pagination ***/
+
+.slidersb .scc-pagination > a {
+	width: 6px;
+	height: 6px;
+	border-radius: 6px;
+	vertical-align: middle;
+}
+.slidersb .scc-pagination > a.scc-active {
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background: #fff!important;
+	border: 2px solid #191919 !important;
+}

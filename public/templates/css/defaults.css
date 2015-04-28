@@ -1,0 +1,217 @@
+
+.scc-wrapper a:focus, .scc-wrapper a.scc-active:focus {
+	outline: 0!important;
+	border: 0!important;
+}
+.scc-wrapper {
+  position: relative;
+  /*margin: 0 0 30px;*/
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+	box-sizing: border-box;
+}
+.scc-wrapper .slides {
+  margin: 0;
+  padding: 0;
+  display: block;
+  list-style-type: none;
+  position: relative;
+}
+.scc-wrapper .slides > li {
+  display: none;
+}
+.scc-wrapper .slides > li:first-child {
+  display: block;
+}
+.scc-wrapper .slides > li > img {
+  max-width: 100%;
+  display: block;
+}
+.scc-wrapper .scc-viewport {
+  overflow: hidden;
+  position: relative;
+}
+.scc-wrapper .scc-no-trans {
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+.scc-wrapper .scc-arrows > a {
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  text-decoration: none;
+  /*color: #d3d3d3;*/
+  text-indent: -9999px;
+	font-size:0 !important;
+  overflow: hidden;
+  width: 60px;
+  height: 100%;
+  line-height: 30px;
+  -moz-transition: opactiy 250ms, background 250ms, color 250ms;
+  -o-transition: opactiy 250ms, background 250ms, color 250ms;
+  -webkit-transition: opactiy 250ms, background 250ms, color 250ms;
+  transition: opactiy 250ms, background 250ms, color 250ms;
+	border-bottom: 0 !important;
+	outline:0 !important;
+	text-decoration:none !important;
+}
+.scc-wrapper .scc-arrows > a:before {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-indent: 0;
+}
+.scc-wrapper .scc-arrows > a.scc-prev {
+  left: 0;
+}
+.scc-wrapper .scc-arrows > a.scc-prev:before {
+  content: '<';
+  left: 15px;
+}
+.scc-wrapper .scc-arrows > a.scc-next {
+  right: 0;
+}
+.scc-wrapper .scc-arrows > a.scc-next:before {
+  content: '>';
+  right: 15px;
+}
+.scc-wrapper .scc-arrows > a.scc-disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.scc-wrapper .scc-arrows > a.scc-disabled:hover {
+  color: #191919;
+  background: transparent;
+}
+.scc-wrapper .scc-pagination {
+  text-align: center;
+  padding: 0 15px 0 15px;
+
+}
+.scc-wrapper .scc-pagination > a {
+  display: inline-block;
+  margin: 0 4px;
+  overflow: hidden;
+  text-indent: -99px;
+  width: 6px;
+  height: 6px;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  -moz-transition: background-color 250ms;
+  -o-transition: background-color 250ms;
+  -webkit-transition: background-color 250ms;
+  transition: background-color 250ms;
+  background: #0af;
+}
+.scc-wrapper .scc-pagination > a:hover, .scc-wrapper .scc-pagination > a.scc-active {
+  background: #f90;
+}
+.scc-wrapper.scc-mode-fade .slides > li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+}
+.scc-wrapper.scc-mode-carousel .slides > li {
+  position: relative;
+}
+.scc-wrapper.scc-mode-carousel .slides > li.scc-active:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.slidercc-desc {
+	box-sizing:border-box;
+}
+
+.cc-pu-customize-preview  {padding:60px 0 0 0;}
+
+#poststuff .slidercc-title h2 {float: none;}
+
+.scc-wrapper .slidercc-title h2, .scc-wrapper .slidercc-desc p {
+	color:inherit !important;
+}
+
+/*** Arrows ***/
+
+@font-face {
+  font-family: 'slidercc';
+  src:url('../fonts/slidercc.eot?cw0zu1');
+  src:url('../fonts/slidercc.eot?#iefixcw0zu1') format('embedded-opentype'),
+    url('../fonts/slidercc.woff?cw0zu1') format('woff'),
+    url('../fonts/slidercc.ttf?cw0zu1') format('truetype'),
+    url('../fonts/slidercc.svg?cw0zu1#slidercc') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.scc-arrows > a.scc-next:before,
+.scc-arrows > a.scc-prev:before
+ {
+  font-family: 'slidercc'!important;
+  speak: none!important;
+  font-style: normal!important;
+  font-weight: normal!important;
+  font-variant: normal!important;
+  text-transform: none!important;
+  line-height: 1!important;
+  -webkit-font-smoothing: antialiased!important;
+  -moz-osx-font-smoothing: grayscale!important;
+}
+.scc-arrows > a.scc-next:before,
+.scc-arrows > a.scc-prev:before  {
+  display: block!important;
+}
+
+/*** Arrows XS ***/
+
+.arrows-xs .scc-arrows > a.scc-next:before,
+.arrows-xs .scc-arrows > a.scc-prev:before {
+  width: 10px!important;
+  height: 16px!important;
+  font-size: 15px;
+}
+.arrows-xs .scc-arrows > a.scc-next:before {
+  content: "\e603";
+}
+.arrows-xs .scc-arrows > a.scc-prev:before {
+  content: "\e601";
+}
+.arrows-xs .scc-arrows > a.scc-disabled:before,
+.arrows-xs .scc-arrows > a.scc-disabled:hover:before
+ {
+  background: transparent!important;
+}
+
+/*** Arrows MD ***/
+
+.arrows-md .scc-arrows > a.scc-next:before,
+.arrows-md .scc-arrows > a.scc-prev:before {
+  width: 24px!important;
+  height: 44px!important;
+  font-size: 40px;
+}
+.arrows-md .scc-arrows > a.scc-next:before {
+  content: "\e602";
+}
+.arrows-md .scc-arrows > a.scc-prev:before {
+  content: "\e600";
+}
+.arrows-md .scc-arrows > a.scc-disabled:before,
+.arrows-md .scc-arrows > a.scc-disabled:hover:before
+ {
+  background: transparent!important;
+}

@@ -1,0 +1,43 @@
+/*** General ***/
+
+.scc-wrapper.carouselcc.light .slides > li.scc-active:after {
+  border: 3px solid #f1f1f1!important;
+}
+
+/*** Header ***/
+
+.carouselcc.light .slidercc-title, .carouselcc.light .slidercc-title h2 {
+	color: #f1f1f1;
+}
+
+/*** Description ***/
+
+.carouselcc.light .slidercc-desc {
+	background: rgba(241, 241, 241, 1)!important;
+	color: #191919;
+}
+
+/*** Link ***/
+
+.carouselcc.light  a, .carouselcc.light a:hover {
+  color: #616161;
+}
+
+/*** Arrows ***/
+
+.carouselcc.light .scc-arrows > a.scc-next:before,
+.carouselcc.light .scc-arrows > a.scc-prev:before {
+  color: #f1f1f1;
+}
+
+/*** Pagination ***/
+
+.carouselcc.light .scc-pagination > a {
+  background: #191919!important;
+}
+.carouselcc.light .scc-pagination > a.scc-active {
+  background: #fff!important;
+}
+.carouselcc.light .scc-pagination > a:hover {
+  background: #d3d3d3!important;
+}
