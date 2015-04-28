@@ -509,6 +509,18 @@ class ChChSliderAdmin {
 				'hide' => sanitize_text_field($_POST['_'.$template.'_pagination_hide'])  
 			);
 			
+			$template_data['title']= array(
+				'color' => sanitize_text_field($_POST['_'.$template.'_title_color'])  
+			);
+			
+			$template_data['desc']= array(
+				'color' => sanitize_text_field($_POST['_'.$template.'_desc_color'])  
+			);
+			
+			$template_data['url']= array(
+				'color' => sanitize_text_field($_POST['_'.$template.'_url_color'])  
+			);
+			
 			update_post_meta($post_id, '_'.$template.'_template_data', $template_data);	
 		}
 	}

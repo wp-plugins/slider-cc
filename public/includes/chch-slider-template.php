@@ -158,7 +158,43 @@ class ChChSliderTemplate {
 
 	function build_css(){
 		$options = $this->get_template_options();
+		$prefix = '';
+		
+		switch($this->template):
+			case 'slider-dark':
+			case 'slider-light':
+			case 'slidersb-light':
+			case 'slidersb-dark':
+				$prefix = '#chch-slidercc-'.$this->post_id.' '; 
+			break;
 
+			case 'sliderwt-dark':
+			case 'sliderwt-light': 
+				$prefix = '#chch-sliderwt1-'.$this->post_id.' ';   
+			break;
+
+			case 'carousel-dark':
+			case 'carousel-light':
+				$prefix = '#chch-carouselcc-'.$this->post_id.' ';   
+			break;
+		endswitch;
+		
+		$css = '<style>'; 
+		$css .= $prefix.' .slidercc-title  {
+			color: '.$options['title']['color'].' !important; 
+		}'; 
+		
+		$css .= $prefix.' .slidercc-desc  {
+			color: '.$options['desc']['color'].' !important; 
+		}'; 
+		
+		$css .= $prefix.' .slidercc-desc a  {
+			color: '.$options['url']['color'].' !important; 
+		}'; 
+		  
+		$css .= '</style>';
+	
+		echo $css; 
 	}
 
 	function build_js(){

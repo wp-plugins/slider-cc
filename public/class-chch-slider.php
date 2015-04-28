@@ -292,7 +292,7 @@ class ChChSlider {
 		
 		if($atts['id'] != 0 && get_post_status ($atts['id']) == 'publish') {
 			$template = new ChChSliderTemplate(NULL, $atts['id']);
-			 
+			$template->build_css();  
 			$template->get_template();
 			echo $template->build_js();  
 			 
