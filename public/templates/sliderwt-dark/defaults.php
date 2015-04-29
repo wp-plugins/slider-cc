@@ -1,23 +1,23 @@
 <?php
-return array (  
-	'arrows' => 
+return array (
+	'arrows' =>
  	array (
-		'hide'	=> '0', 
-	), 
-	'pagination' => 
- 	array ( 
+		'hide'	=> '0',
+	),
+	'pagination' =>
+ 	array (
 		'hide'	=>	'0',
 	),
-	'title' => 
- 	array ( 
-		'hide'	=>	'#191919',
+	'title' =>
+ 	array (
+		'color'	=>	'#191919',
 	),
-    'desc' => 
- 	array ( 
+    'desc' =>
+ 	array (
+		'color'	=>	'#191919',
+	),
+    'url' =>
+ 	array (
 		'color'	=>	'#7E7E7E',
-	),
-    'url' => 
- 	array ( 
-		'color'	=>	'#D3D3D3',
 	),
 );

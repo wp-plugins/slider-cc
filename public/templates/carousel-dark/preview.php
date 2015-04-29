@@ -1,4 +1,4 @@
-<section class="ccs-wrapper" style="width: 740px; margin:0 auto">
+<section class="ccs-wrapper" style="width: 750px; margin:0 auto">
 
 	<div class="ccs-wrapper carouselcc arrows-xs scc-wrapper scc-mode-carousel dark" style="opacity: 1; transition: opacity 1000ms; -webkit-transition: opacity 1000ms;">
 
@@ -13,12 +13,7 @@
 					<img src="<?php echo CHCH_SF_PLUGIN_URL; ?>public/templates/images/placeholder.jpg" alt="Image">
 					<div class="slidercc-title"><h2>Lorem ipsum dolor sit amet</h2></div>
 					<div class="slidercc-desc"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget <a href="#">turpis accumsan mattis</a>.</p></div>
-				</li>
-				<li class="scc-active" style="width: 356.1px; margin-right: 30px; opacity: 1; display: block; float: left; box-sizing: border-box;">
-					<img src="<?php echo CHCH_SF_PLUGIN_URL; ?>public/templates/images/placeholder.jpg" alt="Image">
-					<div class="slidercc-title"><h2>Lorem ipsum dolor sit amet</h2></div>
-					<div class="slidercc-desc"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget <a href="#">turpis accumsan mattis</a>.</p></div>
-				</li>
+				</li> 
 			</ul>
 			<div class="scc-arrows">
 				<a href="#" class="scc-prev">Previous slide</a>

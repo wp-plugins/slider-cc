@@ -10,7 +10,7 @@ return array (
 	),
 	'title' => 
  	array ( 
-		'hide'	=>	'#191919',
+		'color'	=>	'#191919',
 	),
     'desc' => 
  	array ( 

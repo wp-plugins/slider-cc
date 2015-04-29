@@ -45,7 +45,7 @@
 	margin: 0!important;
 }
 .carouselcc .slidercc-desc {
-	padding: 0 5px 0 5px;
+	padding: 5px;
 }
 
 /*** Link ***/
@@ -90,9 +90,9 @@
 	vertical-align: middle;
 }
 .carouselcc .scc-pagination > a.scc-active {
-	width: 10px !important;
-	height: 10px !important;
-	border-radius: 10px !important;
+	width: 8px !important;
+	height: 8px !important;
+	border-radius: 8px !important;
 	background: #fff !important;
 	border: 2px solid #191919 !important;
 }

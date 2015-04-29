@@ -22,7 +22,7 @@
 	text-align: center!important;
 }
 .slidersb .slidercc-title h2  {
-	padding: 20px 10px 10px 10px!important;
+	padding: 20px 10px 20px 10px!important;
 	margin: 0!important;
 }
 
@@ -41,7 +41,7 @@
 	margin: 0!important;
 }
 .slidersb .slidercc-desc {
-	padding: 7px 20px 20px 20px;
+	padding: 7px 10px 20px 10px;
 }
 
 /*** Link ***/
@@ -80,9 +80,9 @@
 	vertical-align: middle;
 }
 .slidersb .scc-pagination > a.scc-active {
-	width: 10px;
-	height: 10px;
-	border-radius: 10px;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
 	background: #fff!important;
 	border: 2px solid #191919 !important;
 }

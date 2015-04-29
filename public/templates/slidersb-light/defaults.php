@@ -10,7 +10,7 @@ return array (
 	),
 	'title' => 
  	array ( 
-		'color'	=>	'#F1F1F1',
+		'color'	=>	'#191919',
 	),
     'desc' => 
  	array ( 

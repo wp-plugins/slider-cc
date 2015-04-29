@@ -14,6 +14,8 @@
 .slidercc .slidercc-desc {
 	bottom: 0;
 	left: 0;
+  padding: 7px 30px;
+  box-sizing: border-box; 
 }
 
 /*** Header ***/
@@ -41,9 +43,7 @@
 	padding: 0!important;
 	margin: 0!important;
 }
-.slidercc .slidercc-desc {
-	padding: 7px 30px 7px 30px;
-}
+ 
 
 /*** Link ***/
 
@@ -81,9 +81,9 @@
 	vertical-align: middle;
 }
 .slidercc .scc-pagination > a.scc-active {
-	width: 10px !important;
-	height: 10px !important;
-	border-radius: 10px !important;
+	width: 8px !important;
+	height: 8px !important;
+	border-radius: 8px !important;
 	background: #fff!important;
 	border: 2px solid #191919 !important;
 }

@@ -180,6 +180,11 @@ class ChChSliderTemplate {
 		endswitch;
 		
 		$css = '<style>'; 
+    
+    $css .= $prefix.'  {
+			width: '. get_post_meta($this->post_id, '_chch_slider_width',true).'px; 
+		}'; 
+    
 		$css .= $prefix.' .slidercc-title  {
 			color: '.$options['title']['color'].' !important; 
 		}'; 
@@ -279,6 +284,8 @@ class ChChSliderTemplate {
 						autoPlay :'.$autoPlay.',
 						mousewheel : '.$mousewheel.',
 						touch : '.$touch.',
+            slideWidth: "33.3%",
+            slideMargin: 10,
 			});';
 			break;
 		endswitch;

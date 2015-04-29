@@ -5,11 +5,11 @@
 			<ul class="slides">
 				<li class="" style="width: 600px; margin-right: 0px; opacity: 1; display: block; float: left; box-sizing: border-box;">
 					<img src="<?php echo CHCH_SF_PLUGIN_URL; ?>public/templates/images/placeholder.jpg" alt="Image">
-					<div class="slidercc-desc">
-						<div class="slidercc-title">
-							<h2>Lorem ipsum dolor sit amet</h2>
+					<div class="slidercc-title">
+						<h2>Lorem ipsum dolor sit amet</h2>
+						<div class="slidercc-desc">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget <a href="#">turpis accumsan mattis</a>.</p>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget <a href="#">turpis accumsan mattis</a>.</p>
 					</div>
 				</li>
 			</ul>

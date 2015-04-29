@@ -10,14 +10,14 @@ return array (
 	),
 	'title' => 
  	array ( 
-		'hide'	=>	'#191919',
+		'color'	=>	'#d3d3d3',
 	),
     'desc' => 
  	array ( 
-		'color'	=>	'#7E7E7E',
+		'color'	=>	'#7e7e7e',
 	),
     'url' => 
  	array ( 
-		'color'	=>	'#D3D3D3',
+		'color'	=>	'#d3d3d3',
 	),
 );

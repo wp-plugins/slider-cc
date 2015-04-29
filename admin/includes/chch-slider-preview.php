@@ -216,7 +216,7 @@ class ChChSliderPreview {
 							'class'  => 'remover-checkbox', 
 							'attr' => 'display',
 							'target' => '.scc-pagination',  
-							'desc'   => 'Show pagination ?',
+							'desc'   => 'Hide pagination ?',
 						), 
 					),
 				),
