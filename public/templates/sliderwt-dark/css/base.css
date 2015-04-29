@@ -65,9 +65,10 @@
 /*** Pagination ***/
 
 .sliderwt .scc-pagination {
-  bottom: 7px!important;
+  bottom: 17px!important;
   position: absolute!important;
   width: 100%!important;
+  font-size: 0!important;
 }
 .sliderwt .scc-pagination > a {
 	width: 7px !important;

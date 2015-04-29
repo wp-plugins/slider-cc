@@ -190,7 +190,7 @@
 		});
 		this.slider.$slides.last().css({marginRight: 0});
 		_this.slideWidthSum -= slideMargin;
-		this.slider.$slideList.css({width: this.slideWidthSum});
+		this.slider.$slideList.css({width: this.slideWidthSum + 10});
 		// if(this.opts.animateHeight) this.slider.$viewport.height( this.slider.$slides[this.slider.current].slideHeight );
 		// else
 		this.slider.$viewport.height(this.maxHeight);

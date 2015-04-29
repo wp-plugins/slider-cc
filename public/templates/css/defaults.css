@@ -27,6 +27,11 @@
   max-width: 100%;
   display: block;
 }
+
+.slides > li > img {
+  max-width: 100%;
+  display: block;
+}
 .scc-wrapper .scc-viewport {
   overflow: hidden;
   position: relative;
