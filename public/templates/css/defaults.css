@@ -28,7 +28,7 @@
   display: block;
 }
 
-.slides > li > img {
+.slides > li img {
   max-width: 100%;
   display: block;
 }
