@@ -97,7 +97,7 @@ Contact shop@chop-chop.org if you have any questions or wish to provide feedback
 7. Simple Carousel - Dark
 8. Simple Carousel - Light
 9. Admin panel
-10.Customization panel
+10. Customization panel
 
 
 == Changelog ==
