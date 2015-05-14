@@ -25,7 +25,7 @@ class ChChSlider {
 	 *
 	 * @var     string
 	 */
-	const VERSION = '1.0.2';
+	const VERSION = '1.0.3';
 
 	/** 
 	 *
@@ -292,9 +292,13 @@ class ChChSlider {
 		
 		if($atts['id'] != 0 && get_post_status ($atts['id']) == 'publish') {
 			$template = new ChChSliderTemplate(NULL, $atts['id']);
-			$template->build_css();  
+			  
+			ob_start();
+			echo $template->build_css();  
 			$template->get_template();
-			echo $template->build_js();  
+			echo $template->build_js(); 
+			$slider =  ob_get_clean();
+			return $slider;
 			 
 		} else {
 			return '';	

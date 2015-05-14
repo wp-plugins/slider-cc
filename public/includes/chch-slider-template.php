@@ -199,7 +199,7 @@ class ChChSliderTemplate {
 		  
 		$css .= '</style>';
 	
-		echo $css; 
+		return $css; 
 	}
 
 	function build_js(){

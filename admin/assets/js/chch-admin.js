@@ -123,17 +123,15 @@ jQuery(document).ready( function ($) {
 		fields.find('.chch-repeater-desc-field').append('<div id="wp-chch-slide-description-wrap-'+currentIndex+'" class="wp-core-ui wp-editor-wrap tmce-active"><textarea id="chch-wysiwyg-'+currentIndex+'" name="_chch_slides['+currentIndex+'][caption]"></textarea></div>');
 		
 		tinymce.init({
-						selector: 'textarea#chch-wysiwyg-'+currentIndex, 
-						preview_styles:"font-family font-size font-weight font-style text-decoration text-transform",  
-						editor_class:'chch-repeater-wysiwyg',
-						menubar:false,
-						wpautop:true,
-						indent:false,
-						toolbar1:" bold,italic,underline,link,unlink,forecolor,undo,redo",
-						toolbar2:"",
-						toolbar3:"",
-						toolbar4:"", 
-		});  
+      selector: 'textarea#chch-wysiwyg-' + currentIndex,
+      preview_styles: "font-family font-size font-weight font-style text-decoration text-transform",
+      editor_class: 'chch-repeater-wysiwyg',
+      plugins : 'wplink',
+      menubar: false,
+      wpautop: false,
+      indent: false,
+      toolbar: "bold italic underline link unlink undo redo",
+    });
 		
 		count_slides();
 	});

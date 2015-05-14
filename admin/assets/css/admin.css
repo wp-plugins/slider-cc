@@ -308,12 +308,12 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
   background: transparent !important;
 }
 
-/* line 5, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 7, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .cc-pu-tab-2, .hide-section {
   display: none;
 }
 
-/* line 9, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 11, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .cc-pu-customize-form {
   display: none;
   background: none repeat scroll 0px 0px transparent;
@@ -329,7 +329,7 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
   margin-left: 300px;
 }
 
-/* line 24, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 26, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .cc-pu-customize-preview {
   position: absolute;
   left: 0px;
@@ -340,7 +340,7 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
   background: #fff;
 }
 
-/* line 34, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 36, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .cc-pu-customize-controls {
   box-sizing: border-box;
   position: fixed;
@@ -357,7 +357,7 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
   border-right: medium none;
 }
 
-/* line 50, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 52, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .cc-pu-customize-header-actions {
   position: absolute;
   left: 0px;
@@ -372,7 +372,7 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
   border-bottom: 1px solid #DDD;
 }
 
-/* line 64, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 66, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .cc-pu-customize-close {
   display: block;
   position: absolute;
@@ -389,7 +389,7 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
   text-decoration: none;
 }
 
-/* line 80, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 82, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .cc-pu-customize-close:before {
   font: 400 22px/1 dashicons;
   content: "\f335";
@@ -398,7 +398,7 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
   left: 13px;
 }
 
-/* line 88, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 90, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .cc-pu-customize-close:hover {
   background: none repeat scroll 0% 0% #DDD;
   border-color: #CCC;
@@ -407,13 +407,13 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
   box-shadow: none;
 }
 
-/* line 96, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 98, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .cc-pu-customize-header-actions .button-primary {
   float: right;
   margin-top: 9px;
 }
 
-/* line 101, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 103, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .cc-pu-options-overlay {
   overflow-y: auto;
   overflow-x: hidden;
@@ -424,12 +424,12 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
   right: 0px;
 }
 
-/* line 111, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 113, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .cc-pu-options-overlay .accordion-section-content {
   padding: 0 !important;
 }
 
-/* line 115, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 117, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .cc-pu-customize-info {
   color: #555;
   background-color: #FFF;
@@ -437,7 +437,7 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
   padding: 8px 12px;
 }
 
-/* line 121, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 123, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .template-title {
   font-size: 20px;
   font-weight: 200;
@@ -445,7 +445,7 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
   display: block;
 }
 
-/* line 128, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 130, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .accordion-section-title {
   color: #555 !important;
   background-color: #FFF;
@@ -456,17 +456,17 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
   font-size: 14px;
 }
 
-/* line 138, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 140, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .accordion-section-title:after {
   color: #555 !important;
 }
 
-/* line 141, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 143, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .accordion-section-title.open:after {
   content: "\f142";
 }
 
-/* line 146, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 148, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .customize-control-title {
   display: block;
   font-size: 13px;
@@ -476,12 +476,12 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
   margin-top: 15px;
 }
 
-/* line 154, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 156, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .accordion-section-content {
   background: #FAFAFA;
 }
 
-/* line 157, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 159, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .accordion-section-content h4 {
   font-size: 14px;
   text-transform: uppercase;
@@ -491,18 +491,18 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
   margin: 0 0 10px 0;
 }
 
-/* line 167, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 169, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .cc-pu-fields-wrapper {
   position: relative;
   padding: 10px 20px;
 }
 
-/* line 172, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 174, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .cc-pu-fields-wrapper:hover .cc-pu-overlay {
   display: block;
 }
 
-/* line 176, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 178, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .cc-pu-overlay {
   position: absolute;
   width: 100%;
@@ -514,7 +514,7 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
   top: 0;
 }
 
-/* line 187, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 189, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .cc-pu-overlay a {
   position: absolute;
   top: 50%;
@@ -531,12 +531,12 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
   margin-top: -9px;
 }
 
-/* line 203, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 205, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .cc-pu-overlay a:hover {
   text-decoration: underline;
 }
 
-/* line 208, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 210, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .chch-slides-repeater {
   width: 100%;
   border-collapse: collapse;
@@ -544,59 +544,59 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
   text-align: center;
   vertical-align: middle;
 }
-/* line 216, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 218, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .chch-slides-repeater .chch-single-slide:first-child .chch-slide-control .chch-delete-slide {
   display: none;
 }
-/* line 221, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 223, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .chch-slides-repeater .chch-repeater-field {
   padding: 20px;
   border-top: 1px solid #333;
 }
-/* line 225, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 227, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .chch-slides-repeater .chch-slide-counter {
   border: 1px solid #333;
   width: 5%;
 }
-/* line 229, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 231, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .chch-slides-repeater .chch-slide-image {
   width: 20%;
 }
-/* line 232, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 234, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .chch-slides-repeater .chch-slide-image .chch-slide-image-upload {
   margin: 15px 0 0 0;
 }
-/* line 236, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 238, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .chch-slides-repeater .chch-slide-image .chch-image-preview {
   max-width: 200px;
   margin: 0 auto;
 }
-/* line 239, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 241, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .chch-slides-repeater .chch-slide-image .chch-image-preview img {
   max-width: 100%;
   height: auto;
   display: block;
 }
-/* line 247, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 249, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .chch-slides-repeater .chch-slide-content {
   width: 50%;
   text-align: left;
 }
-/* line 251, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 253, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .chch-slides-repeater .chch-slide-content .chch-repeater-text-field {
   margin: 0 0 15px 0;
 }
-/* line 254, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 256, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .chch-slides-repeater .chch-slide-content label {
   width: 100px;
   margin-right: 20px;
   display: inline-block;
 }
-/* line 260, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 262, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .chch-slides-repeater .chch-slide-content input {
   width: 80%;
 }
-/* line 265, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
+/* line 267, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/admin.scss */
 .chch-slides-repeater .chch-slide-control {
   width: 10%;
 }
