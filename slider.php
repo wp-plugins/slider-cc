@@ -10,8 +10,8 @@
  * @wordpress-plugin
  * Plugin Name:       Slider CC
  * Plugin URI:        http://shop.chop-chop.org
- * Description:       An elegant Pop Up in just a few clicks.
- * Version:           1.0.3
+ * Description:       An elegant Slider in just a few clicks.
+ * Version:           1.0.4
  * Author:            Chop-Chop.org
  * Author URI:        http://chop-chop.org
  * Text Domain:       cc-slider-locale

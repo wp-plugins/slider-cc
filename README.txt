@@ -5,7 +5,7 @@ Contributors: chopchoporg
 Tags: slider, sliders, carousel, carousels, slideshow, slideshows, slide
 Requires at least: 3.5.1
 Tested up to: 4.1
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -101,6 +101,9 @@ Contact shop@chop-chop.org if you have any questions or wish to provide feedback
 
 
 == Changelog ==
+
+= 1.0.4 =
+FIX: Google fonts
 
 = 1.0.3 =
 FIX: Wysiwyg editor
