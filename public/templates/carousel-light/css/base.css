@@ -96,3 +96,9 @@
 	background: #fff !important;
 	border: 2px solid #191919 !important;
 }
+
+#cc-pu-customize-preview-carousel-light .carouselcc .scc-pagination > a.scc-active {
+	width: 4px !important;
+	height: 4px !important;
+	border-radius: 4px !important;
+}

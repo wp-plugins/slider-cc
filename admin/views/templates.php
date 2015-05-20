@@ -73,7 +73,7 @@
 							</div>
 							<h3 class="theme-name"><span>Active:</span>	<?php echo $template['title']; ?></h3>
 							<div class="theme-actions">
-								<a  href="#" class="cc-pu-template-edit button button-primary hide" data-template="<?php echo $template['id']; ?>"  data-postid="<?php echo get_the_ID(); ?>" data-nounce="<?php echo wp_create_nonce('cc-pu-preview-'.$template['id']); ?>">Customize</a>
+								<a  href="#" class="cc-pu-template-edit button button-primary" data-template="<?php echo $template['id']; ?>"  data-postid="<?php echo get_the_ID(); ?>" data-nounce="<?php echo wp_create_nonce('cc-pu-preview-'.$template['id']); ?>">Customize</a>
 							</div> 
               <?php 
 						 	$preview = new ChChSliderPreview($template['id'],$template['title']); 
@@ -92,7 +92,7 @@
 							<h3 class="theme-name"><?php echo $template['title']; ?></h3>
 							<div class="theme-actions"> 
 									<a  href="#" class="cc-pu-template-acivate button button-primary" data-template="<?php echo $template['id']; ?>">Activate</a> 
-									<a  href="#" class="cc-pu-template-edit button button-primary hide" data-template="<?php echo $template['id']; ?>" data-postid="<?php echo get_the_ID(); ?>" data-nounce="<?php echo wp_create_nonce('cc-pu-preview-'.$template['id']); ?>">Customize</a>
+									<a  href="#" class="cc-pu-template-edit button button-primary" data-template="<?php echo $template['id']; ?>" data-postid="<?php echo get_the_ID(); ?>" data-nounce="<?php echo wp_create_nonce('cc-pu-preview-'.$template['id']); ?>">Customize</a>
 							</div> 
                
 						<?php 

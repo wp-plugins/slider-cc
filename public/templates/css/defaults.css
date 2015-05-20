@@ -220,3 +220,9 @@
  {
   background: transparent!important;
 }
+
+.cc-pu-customize-form .scc-pagination > a.scc-active {
+	width: 4px !important;
+	height: 4px !important;
+	border-radius: 4px !important; 
+}

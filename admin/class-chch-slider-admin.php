@@ -44,6 +44,7 @@ class ChChSliderAdmin {
 		// Register Post Type Meta Boxes and fields
 		add_action( 'init', array( $this, 'chch_sf_initialize_cmb_meta_boxes'), 9999 );
 		add_filter( 'cmb_meta_boxes', array( $this, 'chch_sf_cmb_metaboxes') );
+    add_action( 'cmb_render_position_select', array( $this, 'chch_sf_render_position_select'), 10, 5  ); 
 		add_action( 'add_meta_boxes_chch-slider', array( $this, 'chch_sf_metabox' ));
 
 		// remove help tabs
@@ -65,6 +66,10 @@ class ChChSliderAdmin {
 		add_action( 'admin_print_scripts', array( $this, 'chch_sf_enqueue_admin_scripts' ));
 		add_action( 'admin_head', array( $this, 'chch_sf_admin_head_scripts') );
 		add_action( 'wp_ajax_chch_sf_load_preview_module', array( $this, 'chch_sf_load_preview_module'  ));
+    
+    // Add custom shortcode button to TineMCE
+		add_action( 'media_buttons_context', array( $this, 'chch_sf_shortcocde_button' ) ); 
+    add_action( 'admin_footer',  array( $this, 'chch_sf_shortcode_modal'));
 
 	}
 
@@ -267,20 +272,14 @@ class ChChSliderAdmin {
 						'class' => 'settings-box input-box height-box'
 					),
 				),*/
-				/*array(
+        array(
 					'name'    => __( 'Position:', $domain ),
 					'id'      => $prefix . 'position',
-					'type'    => 'select',
+					'type'    => 'position_select',
 					'attributes' => array(
 						'class' => 'settings-box select-box position-box'
-						),
-					'options' => array(
-						'left' => __( 'Left', $domain  ),
-						'right' => __( 'Right', $domain  ),
-						'center' => __( 'Center', $domain  ),
-					),
-					'default' => 'left'
-				),*/
+						),  
+				), 
 				array(
 					'name'    => __( 'Effect:', $domain ),
 					'id'      => $prefix . 'effect',
@@ -392,6 +391,47 @@ class ChChSliderAdmin {
 		);
  
 		return $meta_boxes;
+	}
+  
+  
+  /**
+	 * Return a position_select field for CMB
+	 *
+	 * @since     1.0.0
+	 * 
+	 */
+	function chch_sf_render_position_select( $field_args, $escaped_value, $object_id, $object_type, $field_type_object ) {
+		$cookie_expire = array(
+			'center' => 'Center',
+			'left' => 'Left (Available in Pro)',
+			'right' => 'Right (Available in Pro)', 
+		);
+		?>
+		
+		<select class="cmb_select settings-box select-box effect-box" name="<?php echo $field_args['_name']; ?>" id="<?php echo $field_args['_id']; ?>">	
+		
+		<?php
+			foreach($cookie_expire as $value => $title):
+				$selected = '';
+				$disable = '';
+				
+				if(!empty($escaped_value)){
+					if($value == $escaped_value) {
+						$selected = 'selected';	
+					} 
+				}
+				
+				if($value != 'center') {
+					$disable = 'disabled';	
+				}
+				
+			 	echo '<option value="'.$value.'" '.$selected .' '.$disable.'>'.$title.'</option>';
+			endforeach
+		 ?>
+		 
+		</select> 
+				 
+		<?php    
 	}
 
 
@@ -588,4 +628,41 @@ class ChChSliderAdmin {
 		$template->get_preview_template();
 		die();
 	}
+  
+  /**
+   * ChChSliderProAdmin::chch_sp_register_buttons()
+   * 
+   * @param array $buttons
+   * @return array $buttons
+   */
+  function chch_sf_shortcocde_button( $buttons ) {
+      $button_icon = CHCH_SF_PLUGIN_URL.'admin/assets/img/icon.png';
+      echo '<a href="#TB_inline?width=600&height=550&inlineId=chch-sf-shortcode-list" class="button thickbox"><span class="wp-media-buttons-icon" style="background: url('.$button_icon.');background-repeat: no-repeat; background-position: left bottom;"></span>Add slider</a>';
+  }
+  
+  function chch_sf_shortcode_modal(){
+    
+    $sliders = $this->plugin->get_sliders();
+    $modal = '<div id="chch-sf-shortcode-list" style="display:none;"><p>
+          <select id="chch-sf-sliders-select">';
+    foreach($sliders as $slider){
+      $slider_title = get_the_title($slider) ? get_the_title($slider) : $slider;
+      $modal .= '<option value="'.$slider.'">'.$slider_title.'</option>';  
+    }
+    
+    $modal .= '</select> <a class="button" href="#" id="chch-sf-insert-shortcode">Insert shortcode</a></p> </div>';
+    $modal .= ' <script type="text/javascript">
+				jQuery(document).ready(function($) {
+				  $("#chch-sf-insert-shortcode").on("click", function() { 
+				  slider_id = $("#chch-sf-sliders-select option:selected").val();
+					if(window.parent.tinyMCE && window.parent.tinyMCE.activeEditor)
+					{
+						window.parent.send_to_editor("[slidercc id="+slider_id+"]");
+					}
+					tb_remove();
+				  })
+				});
+</script>';
+    echo $modal;
+  }
 }

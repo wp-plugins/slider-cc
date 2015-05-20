@@ -5,7 +5,7 @@ Contributors: chopchoporg
 Tags: slider, sliders, carousel, carousels, slideshow, slideshows, slide
 Requires at least: 3.5.1
 Tested up to: 4.1
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,10 +36,16 @@ With Slider CC you can quickly build elegant sliders and carousels and display t
 
 **Slider CC Pro**
 
-Stay tuned for Slider CC Pro with more templates and full customization. [Sign up](https://shop.chop-chop.org/slider-cc-pro/?utm_source=wordpressorg&utm_medium=slider-link&utm_campaign=slider-pro-notification) to get notified when it's available!
+[Get Slider CC Pro](https://shop.chop-chop.org/slider-cc-pro/?utm_source=wordpressorg&utm_medium=slider-free&utm_campaign=slider-get-pro)
+ with more templates and full customization.
 
+**See all premium templates here:**
 
-You can also [sign up to our newsletter](https://shop.chop-chop.org/?utm_source=wordpressorg&utm_medium=link&utm_campaign=available-in-pro) and grab a 5% OFF code for our plugins.
+ [Simple Slider](https://shop.chop-chop.org/demo/slider-cc) | [Simple Slider 2](https://shop.chop-chop.org/demo/slider-cc/index.php/simple-slider-2) | [Simple Carousel](https://shop.chop-chop.org/demo/slider-cc/index.php/simple-carousel/) | [Slider With Side Box](https://shop.chop-chop.org/demo/slider-cc/index.php/slider-with-side-box) | [Slider with Half Box](https://shop.chop-chop.org/demo/slider-cc/index.php/slider-with-half-box/) | [Slider with Thumbnails](https://shop.chop-chop.org/demo/slider-cc/index.php/slider-with-thumbnails/) | [Slider with Round Thumbnails ](https://shop.chop-chop.org/demo/slider-cc/index.php/slider-with-round-thumbnails/)
+
+**Get notified**
+
+[Sign up to our newsletter](https://shop.chop-chop.org/?utm_source=wordpressorg&utm_medium=link&utm_campaign=available-in-pro) and grab a 5% OFF code for our plugins.
 
 
 == Installation ==
@@ -102,6 +108,9 @@ Contact shop@chop-chop.org if you have any questions or wish to provide feedback
 
 == Changelog ==
 
+= 1.0.5 =
+ADD: Position option
+
 = 1.0.4 =
 FIX: Google fonts
 
@@ -110,10 +119,10 @@ FIX: Wysiwyg editor
 FIX: Shortcode output
 
 = 1.0.2 =
-Carousel js fix
+FIX: Carousel js 
 
 = 1.0.1 =
-Templates fixes
+FIX: Templates css
 
 = 1.0.0 =
 First release

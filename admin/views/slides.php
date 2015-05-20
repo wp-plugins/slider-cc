@@ -44,6 +44,11 @@
 							<label>URL:</label>
 							<input type="text" name="_chch_slides[<?php echo $i; ?>][url]" value="<?php echo $slide['url']; ?>" />
 						</div>
+            
+            <div class="chch-repeater-text-field target-blank">
+              <label>Open in new window</label>
+							<input type="checkbox" class="chch-repeater-checkbox" name="_chch_slides[<?php echo $i; ?>][blank]" <?php echo $slide['blank'] ? 'checked' : ''; ?> />
+						</div>
 					</td>
 					<td class="chch-slide-control chch-repeater-field">
 						<a class="chch-delete-slide dashicons-before">Delete</a>
@@ -94,6 +99,11 @@
 						<div class="chch-repeater-text-field">
 							<label>URL:</label>
 							<input type="text" name="_chch_slides[0][url]" />
+						</div>
+            
+             <div class="chch-repeater-text-field target-blank">
+              <label>Open in new window</label>
+							<input type="checkbox" class="chch-repeater-checkbox" name="_chch_slides[0][blank]" />
 						</div>
 					</td>
 					<td class="chch-slide-control chch-repeater-field">

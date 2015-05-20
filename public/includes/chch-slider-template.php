@@ -110,7 +110,7 @@ class ChChSliderTemplate {
       case 'slider':
       case 'carousel':
         if($slide_url = $slide['url']):?>
-          <a href="<?php echo $slide_url; ?>">
+          <a href="<?php echo $slide_url; ?>" <?php echo $slide['blank'] ? 'target="_blank"' : ''; ?>>
         <?php endif;?>
           <img src="<?php echo $slide['image']; ?>" alt="slide">
         <?php if($slide_url = $slide['url']):?>
@@ -129,7 +129,7 @@ class ChChSliderTemplate {
       case 'sliderwt':
       case 'slidersb':
          if($slide_url = $slide['url']):?>
-          	<a href="<?php echo $slide_url; ?>">
+          	<a href="<?php echo $slide_url; ?>" <?php echo $slide['blank'] ? 'target="_blank"' : ''; ?>>
           <?php endif;?>
           <img src="<?php echo $slide['image']; ?>" alt="slide">
           <?php if($slide_url = $slide['url']):?>
@@ -159,6 +159,10 @@ class ChChSliderTemplate {
 	function build_css(){
 		$options = $this->get_template_options();
 		$prefix = '';
+    
+    $css = '<style>'; 
+    
+    $slider_position = 'margin:0 auto !important;';  
 		
 		switch($this->template):
 			case 'slider-dark':
@@ -170,7 +174,11 @@ class ChChSliderTemplate {
 
 			case 'sliderwt-dark':
 			case 'sliderwt-light': 
-				$prefix = '#chch-sliderwt1-'.$this->post_id.' ';   
+				$prefix = '#chch-sliderwt1-'.$this->post_id.' ';  
+        $css .= '#sliderwt-wrapper-'.$this->post_id.'  {
+    			max-width: '. get_post_meta($this->post_id, '_chch_slider_width',true).'px; 
+          '.$slider_position.' 
+    		}';  
 			break;
 
 			case 'carousel-dark':
@@ -179,11 +187,15 @@ class ChChSliderTemplate {
 			break;
 		endswitch;
 		
-		$css = '<style>'; 
-    
-    $css .= $prefix.'  {
-			width: '. get_post_meta($this->post_id, '_chch_slider_width',true).'px; 
-		}'; 
+		 
+    if($this->template != 'sliderwt-dark' || $this->template != 'sliderwt-light'){ 
+        
+      $css .= $prefix.'  {
+  			max-width:'. get_post_meta($this->post_id, '_chch_slider_width',true).'px;
+        '.$slider_position.' 
+  		}';   
+    }
+      
     
 		$css .= $prefix.' .slidercc-title  {
 			color: '.$options['title']['color'].' !important; 

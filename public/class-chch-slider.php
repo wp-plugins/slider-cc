@@ -25,7 +25,7 @@ class ChChSlider {
 	 *
 	 * @var     string
 	 */
-	const VERSION = '1.0.4';
+	const VERSION = '1.0.5';
 
 	/** 
 	 *
@@ -234,7 +234,7 @@ class ChChSlider {
 	 *
 	 * @return   array - Sliders ids
 	 */
-	private function get_sliders() {
+	public function get_sliders() {
 		$list = array();
 		
 		$args = array(
