@@ -2,7 +2,7 @@
 
 
 Contributors: chopchoporg
-Tags: slider, sliders, carousel, carousels, slideshow, slideshows, slide
+Tags: slider, image slider, carousel, image carousel, carousel slider, slider plugin wordpress, wordpress slider plugin free, slider wordpress, responsive slider plugin, responsive slider, responsive carousel, carousel slider, carousel slider worpdress, free slider plugin, wp slider, wp carousel, wordpress slider, wordpress carousel, slider and carousel, slider with thumbnails, thumbnails slider, rotator, image rotator, unlimited sliders, jquery slider, photo slider
 Requires at least: 3.5.1
 Tested up to: 4.1
 Stable tag: 1.0.5
@@ -10,36 +10,54 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
-Slider plugin with professional templates.
+Responsive slider plugin with professional templates. Beautiful designs, easy set-up, multiple customization options. Probably the prettiest slider around.
 
 
 == Description ==
 
+**Overview**
 
-Slider CC brings unlimited sliders with professional templates. The sliders are responsive and work with any WordPress theme.
+Slider CC brings unlimited responsive sliders with **four** professional templates. Each slider template is available in **two color variations** (light and dark). All sliders are **responsive** and work with any WordPress theme.
 
-With Slider CC you can quickly build elegant sliders and carousels and display them easily within posts and pages with a shortcode.
+With Slider CC you can quickly build elegant sliders and carousels and display them easily within posts and pages with a shortcode. No need to write JS or CSS - just select a template, upload photos, choose the transition effect and enjoy your new amazing slider. **All within a couple of clicks.**
 
-**Features:**
+**Customization**
+
+Slider CC is an easy way to create sliders and carousels matching your website’s design perfectly. Use our fabulous **live visual editor** to customize the colors of the headers, descriptions and URLs. 
+
+**[Get Slider CC Pro](https://shop.chop-chop.org/slider-cc-pro/?utm_source=wordpressorg&utm_medium=slider-free&utm_campaign=slider-get-pro)** if you need full control over your slider’s design (fonts, colors, arrows, pagination).
+
+Choose between **CSS animate**, **jQuery.animate** and **velocity.js** for the best slider performance. Enable or disable mousewheel navigation, keyboard navigation and touch drag.
+
+**Features**
 
 * Unlimited number of sliders
 * Unlimited number of slides in a slider
-* Beautiful designs
+* Beautiful slider designs
 * Various responsive slider templates
-* Light and dark theme for every template
+* Light and dark theme for every slider template
 * Quick and easy slider setup
 * User-friendly interface
-* Image title and description
-* Slide URL
+* Slider image title and description
+* Individual slide URLs
+* Autoplay
+* Pause on hover
+* Shuffle
+* Custom slider width
+* Custom slider speed
+* Animation type selection: CSS Animate, jQuery.animate, velocity.js
+* Mousewheel navigation
+* Keyboard navigation
+* Touch drag
 
 **Need more?**
 
 **Slider CC Pro**
 
-[Get Slider CC Pro](https://shop.chop-chop.org/slider-cc-pro/?utm_source=wordpressorg&utm_medium=slider-free&utm_campaign=slider-get-pro)
- with more templates and full customization.
-
-**See all premium templates here:**
+**[Get Slider CC Pro](https://shop.chop-chop.org/slider-cc-pro/?utm_source=wordpressorg&utm_medium=slider-free&utm_campaign=slider-get-pro)**
+ with more slider templates and full slider customization. 
+ 
+**See all premium slider templates here:**
 
  [Simple Slider](https://shop.chop-chop.org/demo/slider-cc) | [Simple Slider 2](https://shop.chop-chop.org/demo/slider-cc/index.php/simple-slider-2) | [Simple Carousel](https://shop.chop-chop.org/demo/slider-cc/index.php/simple-carousel/) | [Slider With Side Box](https://shop.chop-chop.org/demo/slider-cc/index.php/slider-with-side-box) | [Slider with Half Box](https://shop.chop-chop.org/demo/slider-cc/index.php/slider-with-half-box/) | [Slider with Thumbnails](https://shop.chop-chop.org/demo/slider-cc/index.php/slider-with-thumbnails/) | [Slider with Round Thumbnails ](https://shop.chop-chop.org/demo/slider-cc/index.php/slider-with-round-thumbnails/)
 
@@ -55,7 +73,7 @@ With Slider CC you can quickly build elegant sliders and carousels and display t
 
 
 1. Navigate to the 'Add New' in the plugins dashboard
-2. Search for 'slider-chch'
+2. Search for 'slider-cc'
 3. Click 'Install Now'
 4. Activate the plugin on the Plugin dashboard
 5. Go to Slider CC in the left menu to manage the sliders
@@ -66,7 +84,7 @@ With Slider CC you can quickly build elegant sliders and carousels and display t
 
 1. Navigate to the 'Add New' in the plugins dashboard
 2. Navigate to the 'Upload' area
-3. Select 'slider-chch' from your computer
+3. Select 'slider-cc' from your computer
 4. Click 'Install Now'
 5. Activate the plugin in the Plugin dashboard
 6. Go to Slider CC in the left menu to manage the sliders
@@ -75,9 +93,9 @@ With Slider CC you can quickly build elegant sliders and carousels and display t
 = Using FTP =
 
 
-1. Download 'slider-chch'
-2. Extract the 'slider-chch' directory to your computer
-3. Upload the 'slider-chch' directory to the '/wp-content/plugins/' directory
+1. Download 'slider-cc'
+2. Extract the 'slider-cc' directory to your computer
+3. Upload the 'slider-cc' directory to the '/wp-content/plugins/' directory
 4. Activate the plugin in the Plugin dashboard
 5. Go to Slider CC in the left menu to manage the sliders
 
@@ -106,7 +124,7 @@ Contact shop@chop-chop.org if you have any questions or wish to provide feedback
 10. Customization panel
 
 
-== Changelog ==
+== Changelog == 
 
 = 1.0.5 =
 ADD: Position option
