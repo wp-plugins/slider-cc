@@ -188,7 +188,7 @@ class ChChSliderTemplate {
 		endswitch;
 		
 		 
-    if($this->template != 'sliderwt-dark' || $this->template != 'sliderwt-light'){ 
+    if($this->template != 'sliderwt-dark' && $this->template != 'sliderwt-light'){ 
         
       $css .= $prefix.'  {
   			max-width:'. get_post_meta($this->post_id, '_chch_slider_width',true).'px;
@@ -227,60 +227,65 @@ class ChChSliderTemplate {
 		$pause = get_post_meta($this->post_id, '_chch_slider_pause',true) ? 'true' : 'false';
 		$autoPlay = get_post_meta($this->post_id, '_chch_slider_autoplay',true) ? $speed : 'false';
 		$touch = get_post_meta($this->post_id, '_chch_slider_touch',true) ? 'true' : 'false';
-		$mousewheel = get_post_meta($this->post_id, '_chch_slider_mousewheel',true) ? 'true' : 'false';
+		$mousewheel = get_post_meta($this->post_id, '_chch_slider_mousewheel',true) ? 'true' : 'false'; 
 
-		$js = '<script>jQuery(function($) { ';
+		$js = "<script>\n\tjQuery(function($) {\n";
 
 		switch($this->template):
 			case 'slider-dark':
 			case 'slider-light':
 			case 'slidersb-light':
 			case 'slidersb-dark':
-				$js .= '
-					$("#chch-slidercc-'.$this->post_id.'").slidercc({
-						mode: \''.$mode.'\' ,
-						animationSpeed : '.$speed.',
-						pagination : '.$pagination.',
-						arrows : '.$arrows.',
-						animationMethod : "'.$animation_type.'",
-						keyboard : '.$keyboard.',
-						pauseOnHover : '.$pause.',
-						autoPlay :'.$autoPlay.',
-						mousewheel : '.$mousewheel.',
-						touch : '.$touch.',
-					});';
+      
+				$js .= sprintf("\t\t$('#chch-slidercc-%s').slidercc({\n",$this->post_id);
+				$js .= sprintf("\t\t\tmode: '%s' ,\n",$mode);
+        $js .= sprintf("\t\t\tanimationSpeed: %s ,\n",$speed); 
+        $js .= sprintf("\t\t\tpagination: %s ,\n",$pagination);  
+        $js .= sprintf("\t\t\tarrows: %s ,\n",$arrows); 
+        $js .= sprintf("\t\t\tanimationMethod: \"%s\" ,\n",$animation_type); 
+        $js .= sprintf("\t\t\tkeyboard: %s ,\n",$keyboard); 
+        $js .= sprintf("\t\t\tpauseOnHover: %s ,\n",$pause); 
+        $js .= sprintf("\t\t\tautoPlay: %s ,\n",$autoPlay);  
+        $js .= sprintf("\t\t\tmousewheel: %s ,\n",$mousewheel); 
+        $js .= sprintf("\t\t\ttouch: %s ,\n",$touch);  
+				$js .= "\t\t});\n";
+        
 			break;
 
 			case 'sliderwt-dark':
 			case 'sliderwt-light':
-				$js .= '
-			$("#chch-sliderwt1-'.$this->post_id.'").slidercc({
-				mode: \''.$mode.'\' ,
-      	pagination: false, 
-  			synchronize: "#chch-sliderccth1-'.$this->post_id.'",
-				animationSpeed : '.$speed.',
-				pagination : '.$pagination.',
-				arrows : '.$arrows.',
-				animationMethod : "'.$animation_type.'",
-				keyboard : '.$keyboard.',
-				pauseOnHover : '.$pause.',
-				autoPlay :'.$autoPlay.',
-				mousewheel : '.$mousewheel.',
-				touch : '.$touch.',
-			});
-
-			$("#chch-sliderccth1-'.$this->post_id.'").slidercc({
-     		mode: "carousel",
-    		synchronize: "#chch-sliderwt1-'.$this->post_id.'",
-     		remoteControl: "#chch-sliderwt1-'.$this->post_id.'",
-				slideMargin: 10,
-				slideWidth: 80,
-				pagination : false,
-				arrows : false,
-			});
-
-			';
-			break;
+      
+        $js .= sprintf("\t\t$('#chch-sliderwt1-%s').slidercc({\n",$this->post_id);
+        $js .= sprintf("\t\t\tsynchronize: \"#chch-sliderccth1-%s\" ,\n",$this->post_id);
+				$js .= sprintf("\t\t\tmode: '%s' ,\n",$mode);
+        $js .= sprintf("\t\t\tanimationSpeed: %s ,\n",$speed); 
+        $js .= sprintf("\t\t\tpagination: %s ,\n",$pagination);  
+        $js .= sprintf("\t\t\tarrows: %s ,\n",$arrows); 
+        $js .= sprintf("\t\t\tanimationMethod: \"%s\" ,\n",$animation_type); 
+        $js .= sprintf("\t\t\tkeyboard: %s ,\n",$keyboard); 
+        $js .= sprintf("\t\t\tpauseOnHover: %s ,\n",$pause); 
+        $js .= sprintf("\t\t\tautoPlay: %s ,\n",$autoPlay);  
+        $js .= sprintf("\t\t\tmousewheel: %s ,\n",$mousewheel); 
+        $js .= sprintf("\t\t\ttouch: %s ,\n",$touch);  
+				$js .= "\t\t});\n\n"; 
+        
+        $slide_width ='80';
+        
+        if($this->template == 'sliderrt-dark'){
+          $slide_width ='60';  
+        }
+        
+        $js .= sprintf("\t\t$('#chch-sliderccth1-%s').slidercc({\n",$this->post_id); 
+        $js .= sprintf("\t\t\tmode: '%s' ,\n","carousel"); 
+        $js .= sprintf("\t\t\tsynchronize: \"#chch-sliderwt1-%s\" ,\n",$this->post_id); 
+        $js .= sprintf("\t\t\tremoteControl: \"#chch-sliderwt1-%s\" ,\n",$this->post_id);  
+        $js .= sprintf("\t\t\tslideMargin: %s,\n",'10'); 
+        $js .= sprintf("\t\t\tslideWidth: %s ,\n",$slide_width);  
+        $js .= sprintf("\t\t\tpagination: %s ,\n",'false');  
+        $js .= sprintf("\t\t\tarrows: %s ,\n",'false'); 
+		    $js .= "\t\t});\n";  
+        
+			break; 
 
 			case 'carousel-dark':
 			case 'carousel-light':
@@ -302,7 +307,7 @@ class ChChSliderTemplate {
 			break;
 		endswitch;
 
-		$js .= '});</script>';
+		$js .= "\t});\n</script>";
 
 		return $js;
 

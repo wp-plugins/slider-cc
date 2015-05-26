@@ -61,7 +61,7 @@ class ChChSlider {
 		// Include fonts on front-end
 		add_action('wp_head', array( $this, 'chch_sf_hook_fonts' ) );  
 		
-		 add_shortcode('slidercc', array( $this, 'chch_sf_shortcode' ) );
+    add_shortcode('slidercc', array( $this, 'chch_sf_shortcode' ) );
 	}
 	
 	/**
@@ -285,6 +285,14 @@ class ChChSlider {
 		echo $output;
 	}
 	
+	/**
+	 * ChChSlider::chch_sf_shortcode()
+   * 
+   * 
+	 * 
+	 * @param mixed $atts - shortcode attributes
+	 * @return string $slider - sliderCC html, css ,js
+	 */
 	function chch_sf_shortcode( $atts ) {
 		$atts = shortcode_atts( array(
 			'id' => 0, 
@@ -298,11 +306,11 @@ class ChChSlider {
 			$template->get_template();
 			echo $template->build_js(); 
 			$slider =  ob_get_clean();
+      
 			return $slider;
 			 
 		} else {
 			return '';	
-		}
-		 
+		} 
 	} 
 }
