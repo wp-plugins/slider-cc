@@ -1,4 +1,4 @@
-=== Slider CC ===
+﻿=== Slider CC ===
 
 
 Contributors: chopchoporg
@@ -10,7 +10,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
-Responsive slider plugin with professional templates. Beautiful designs, easy set-up, multiple customization options. Probably the prettiest slider around.
+Responsive slider plugin with professional themes. Beautiful designs, easy set-up, many customization options. Probably the prettiest slider around.
 
 
 == Description ==
