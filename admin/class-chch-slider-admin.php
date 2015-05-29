@@ -263,15 +263,7 @@ class ChChSliderAdmin {
 						'class' => 'settings-box input-box width-box'
 						),
 						'default' => '600'
-				),
-				/*array(
-					'name'    => __( 'Height:', $domain ),
-					'id'      => $prefix . 'height',
-					'type'    => 'text',
-					'attributes' => array(
-						'class' => 'settings-box input-box height-box'
-					),
-				),*/
+				), 
         array(
 					'name'    => __( 'Position:', $domain ),
 					'id'      => $prefix . 'position',
@@ -292,20 +284,7 @@ class ChChSliderAdmin {
 						'fade' => __( 'Fade', $domain  ),
 					),
 					'default' => 'slide'
-				),
-				/*array(
-					'name'    => __( 'Slides order:', $domain ),
-					'id'      => $prefix . 'order',
-					'type'    => 'select',
-					'attributes' => array(
-						'class' => 'settings-box select-box order-box'
-						),
-					'options' => array(
-						'default' => __( 'Default', $domain  ),
-						'random' => __( 'Random', $domain  ),
-					),
-					'default' => 'default'
-				),*/
+				), 
 				array(
 					'name' => __( 'Pause on hover', $domain  ),
 					'id'   => $prefix . 'pause',
@@ -330,16 +309,7 @@ class ChChSliderAdmin {
 						'class' => 'settings-box input-box speed-box'
 					),
 					'default' => '2000'
-				),/*
-				array(
-					'name'    => __( 'Interval:', $domain ),
-					'id'      => $prefix . 'interval',
-					'type'    => 'text',
-					'attributes' => array(
-						'class' => 'settings-box input-box interval-box'
-					),
-					'default' => '2000'
-				),*/
+				), 
 			),
 		);
  
@@ -664,5 +634,36 @@ class ChChSliderAdmin {
 				});
 </script>';
     echo $modal;
+  }
+  
+  /** 
+   *
+   * Function returns array with all pages/posts form all post types
+   *
+   * @return array $all_posts - list of all pages witch page id - [id] and page title - [title]
+   */
+  private function chch_sf_get_pages() {
+
+    $args = array( 'public' => true, '_builtin' => true);
+
+    $post_types = get_post_types( $args);
+
+    $args = array(
+      'post_type' => $post_types,
+      'posts_per_page' => -1,
+      'orderby' => 'title',
+      'order' => 'ASC');
+
+    $post_list = get_posts( $args);
+
+    $all_posts = array();
+
+    if ( $post_list):
+      foreach ( $post_list as $post):
+        $all_posts[$post->ID] = get_the_title( $post->ID);
+      endforeach;
+    endif;
+
+    return $all_posts;
   }
 }

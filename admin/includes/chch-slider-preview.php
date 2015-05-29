@@ -48,7 +48,7 @@ class ChChSliderPreview {
 		$base = $this->template_base;
 		
 		
-		echo '<div class="cc-pu-customize-form" id="cc-pu-customize-form-'.$template.'">';
+		echo '<div class="cc-pu-customize-form" id="cc-pu-customize-form-'.$template.'" style="display:none;">';
 		 
 		echo '<div class="cc-pu-customize-controls">';
 		

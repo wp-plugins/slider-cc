@@ -1,11 +1,11 @@
-﻿=== Slider CC ===
+=== Slider CC ===
 
 
 Contributors: chopchoporg
 Tags: slider, image slider, carousel, image carousel, carousel slider, slider plugin wordpress, wordpress slider plugin free, slider wordpress, responsive slider plugin, responsive slider, responsive carousel, carousel slider, carousel slider worpdress, free slider plugin, wp slider, wp carousel, wordpress slider, wordpress carousel, slider and carousel, slider with thumbnails, thumbnails slider, rotator, image rotator, unlimited sliders, jquery slider, photo slider
 Requires at least: 3.5.1
 Tested up to: 4.1
-Stable tag: 1.0.5
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,7 +23,7 @@ With Slider CC you can quickly build elegant sliders and carousels and display t
 
 **Customization**
 
-Slider CC is an easy way to create sliders and carousels matching your website’s design perfectly. Use our fabulous **live visual editor** to customize the colors of the headers, descriptions and URLs. 
+Slider CC is an easy way to create sliders and carousels matching your website’s design perfectly. Use our fabulous **live visual editor** to customize the colors of the headers, descriptions and URLs.
 
 **[Get Slider CC Pro](https://shop.chop-chop.org/slider-cc-pro/?utm_source=wordpressorg&utm_medium=slider-free&utm_campaign=slider-get-pro)** if you need full control over your slider’s design (fonts, colors, arrows, pagination).
 
@@ -49,14 +49,19 @@ Choose between **CSS animate**, **jQuery.animate** and **velocity.js** for the b
 * Mousewheel navigation
 * Keyboard navigation
 * Touch drag
+* **NEW:** Drag & drop slides reorder
 
 **Need more?**
 
 **Slider CC Pro**
 
-**[Get Slider CC Pro](https://shop.chop-chop.org/slider-cc-pro/?utm_source=wordpressorg&utm_medium=slider-free&utm_campaign=slider-get-pro)**
- with more slider templates and full slider customization. 
- 
+**[Get Slider CC Pro](https://shop.chop-chop.org/slider-cc-pro/?utm_source=wordpressorg&utm_medium=slider-free&utm_campaign=slider-get-pro)** with:
+
+* More slider templates
+* **NEW:** Post or page slides
+* Full slider customization
+* More slider positioning options
+
 **See all premium slider templates here:**
 
  [Simple Slider](https://shop.chop-chop.org/demo/slider-cc) | [Simple Slider 2](https://shop.chop-chop.org/demo/slider-cc/index.php/simple-slider-2) | [Simple Carousel](https://shop.chop-chop.org/demo/slider-cc/index.php/simple-carousel/) | [Slider With Side Box](https://shop.chop-chop.org/demo/slider-cc/index.php/slider-with-side-box) | [Slider with Half Box](https://shop.chop-chop.org/demo/slider-cc/index.php/slider-with-half-box/) | [Slider with Thumbnails](https://shop.chop-chop.org/demo/slider-cc/index.php/slider-with-thumbnails/) | [Slider with Round Thumbnails ](https://shop.chop-chop.org/demo/slider-cc/index.php/slider-with-round-thumbnails/)
@@ -124,7 +129,10 @@ Contact shop@chop-chop.org if you have any questions or wish to provide feedback
 10. Customization panel
 
 
-== Changelog == 
+== Changelog ==
+
+= 1.1.0 =
+ADD: Drag & drop slides reorder
 
 = 1.0.5 =
 ADD: Position option
@@ -137,7 +145,7 @@ FIX: Wysiwyg editor
 FIX: Shortcode output
 
 = 1.0.2 =
-FIX: Carousel js 
+FIX: Carousel js
 
 = 1.0.1 =
 FIX: Templates css

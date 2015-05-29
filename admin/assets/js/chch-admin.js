@@ -91,11 +91,31 @@ jQuery(document).ready( function ($) {
 	});
   
 	/////SLIDES REPEATER
+  
+  $('.chch-repeater-page').on('change', function() {
+    if ($(this).is(':checked')) {
+      $(this).siblings('.chch-repeater-field-desc').slideDown('fast');
+    } else {
+      $(this).siblings('.chch-repeater-field-desc').slideUp('fast');
+    }
+  });
+  
 	function count_slides(){
 		$('.chch-slides-repeater .chch-slide-counter').each(function(index){
 			$(this).html(	index+1);
 		});
 	}
+  
+  $('.chch-slides-repeater tbody').sortable({
+    opacity: 0.6,
+    revert: true,
+    cursor: 'move',
+    handle: '.chch-slide-counter',
+    axis: "y",
+    update: function(event, ui) {
+      count_slides();
+    }
+  });
 	
 	$( "#chch-add-slide" ).on('click', function(e){
 		e.preventDefault();
@@ -109,13 +129,23 @@ jQuery(document).ready( function ($) {
 		fields.find('.wp-editor-wrap').remove(); 
 		fields.find('img').remove();
 		 
-		fields_inputs = fields.find('input');
+		fields_inputs = fields.find('.chch-repeater-input');
 					
 		fields_inputs.each(function(){
-			$(this).val('');
-			field_name = $(this).attr('name');
-			field_name = field_name.replace('_chch_slides[0]', '_chch_slides['+currentIndex+']');
-			$(this).attr('name',field_name);
+			if ($(this).attr('type') == 'text') {
+        $(this).val('');
+      }
+
+      if ($(this).attr('type') == 'checkbox') {
+        if ($(this).is(':checked')) {
+          $(this).attr('checked', false);
+          fields.find('.chch-repeater-field-desc').hide();
+        }
+      }
+
+      if ($(this).is("select")) {
+        $(this).find("option").prop("selected", false);
+      }
 		});
 		
 		fields.appendTo(wrapper);
@@ -168,8 +198,7 @@ jQuery(document).ready( function ($) {
 			var template = el.attr('data-template');
 			var target = el.attr('data-customize-target');
 			var styleAttr = el.attr('data-attr');
-			var elValue = el.val(); 
-			console.log(elValue);
+			var elValue = el.val();  
 			$('#cc-pu-customize-preview-'+template+' '+target).css(styleAttr,elValue);
 		})
 	 });

@@ -221,8 +221,17 @@ input.chch-repeater-checkbox {
   float: left;
 }
 
+/* line 167, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
+.chch-repeater-field-desc {
+  margin-left: 21%;
+  margin-top: 10px;
+  padding: 10px;
+  width: 70%;
+  border: 1px dashed #ccc !important;
+}
+
 /*** Customizer ***/
-/* line 169, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
+/* line 177, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
 label.cc-pu-customizer-class-switcher span,
 label.cc-pu-option-active.cc-pu-customizer-checkbox span,
 label.cc-pu-option-active.cc-pu-customizer-checkbox span {
@@ -230,7 +239,7 @@ label.cc-pu-option-active.cc-pu-customizer-checkbox span {
   width: 85% !important;
 }
 
-/* line 176, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
+/* line 184, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
 .cc-pu-customizer-class-switcher input,
 .cc-pu-customizer-checkbox input {
   display: inline-block;
@@ -239,20 +248,20 @@ label.cc-pu-option-active.cc-pu-customizer-checkbox span {
   margin-right: 10px !important;
 }
 
-/* line 184, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
+/* line 192, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
 .cc-pu-customize-controls {
   border-right: 1px solid #cccccc !important;
 }
 
 /*** Colors ***/
-/* line 189, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
+/* line 197, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
 input[type=checkbox], input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=radio], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea,
 .postbox {
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
 }
 
-/* line 195, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
+/* line 203, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
 #poststuff {
   background: #fff;
   border: 1px solid #cccccc;
@@ -260,67 +269,67 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
   padding: 20px 0 0 20px;
 }
 
-/* line 201, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
+/* line 209, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
 .nav-tab {
   border-bottom: 1px solid #ccc !important;
 }
 
-/* line 204, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
+/* line 212, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
 .nav-tab.nav-tab-active, .nav-tab.nav-tab-active:hover {
   border-bottom: 1px solid #FFFFFF !important;
   background: #FFFFFF !important;
 }
 
-/* line 208, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
+/* line 216, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
 .nav-tab:hover {
   background: #f1f1f1 !important;
 }
 
-/* line 211, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
+/* line 219, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
 #post-body.columns-2 #postbox-container-1 {
   float: right;
   margin-right: -240px;
   width: 240px;
 }
 
-/* line 216, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
+/* line 224, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
 .theme-browser .theme .theme-actions {
   border-left: 0 !important;
   width: 94.6% !important;
   text-align: right !important;
 }
 
-/* line 221, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
+/* line 229, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
 .chch-single-slide:nth-child(odd) {
   background: rgba(250, 250, 250, 0.3) !important;
 }
 
-/* line 224, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
+/* line 232, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
 .chch-single-slide:nth-child(even) {
   background: rgba(250, 250, 250, 0.6) !important;
 }
 
-/* line 227, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
+/* line 235, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
 .chch-slides-repeater .chch-slide-counter {
   background: rgba(241, 241, 241, 0.32) !important;
 }
 
-/* line 230, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
+/* line 238, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
 .postbox {
   background: rgba(250, 250, 250, 0.3) !important;
 }
 
-/* line 233, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
+/* line 241, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
 #poststuff .theme-browser .theme .theme-name {
   background: rgba(250, 250, 250, 0.6) !important;
 }
 
-/* line 236, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
+/* line 244, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
 #poststuff .theme-browser .theme.active .theme-name {
   background: #424242 !important;
 }
 
-/* line 240, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
+/* line 248, ../../../../../../../source/wp-content/plugins/slider-chch/admin/assets/css/_admin-styles.scss */
 .theme-browser .theme.active .theme-actions {
   background: transparent !important;
 }
