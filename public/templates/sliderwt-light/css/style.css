@@ -40,7 +40,15 @@
 }
 
 /*** Thumbnails ***/
-
-.sliderccth.light .slides > li.scc-active:after {
-    border: 2px solid #f1f1f1!important;
+.sliderccth.light .slides > li  { 
+		border-color: transparent !important;
+		border-width: 2px !important;
+		border-style: solid !important;
+		margin-top: 0px;
+}
+.sliderccth.light .slides > li.scc-active  { 
+		border-color: #f1f1f1 !important;
+		border-width: 2px !important;
+		border-style: solid !important;
+		margin-top: 0px;
 }

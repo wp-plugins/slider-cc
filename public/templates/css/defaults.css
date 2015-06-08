@@ -129,14 +129,12 @@
 .scc-wrapper.scc-mode-carousel .slides > li {
   position: relative;
 }
-.scc-wrapper.scc-mode-carousel .slides > li.scc-active:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
+/*.scc-wrapper.scc-mode-carousel .slides > li.scc-active {
+  border-width: 3px !important;
+border-style: solid !important;
+border-color: #191919;
+margin-top: 0px;
+}*/
 
 .slidercc-desc {
 	box-sizing:border-box;

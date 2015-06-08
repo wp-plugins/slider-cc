@@ -5,7 +5,7 @@ Contributors: chopchoporg
 Tags: slider, image slider, carousel, image carousel, carousel slider, slider plugin wordpress, wordpress slider plugin free, slider wordpress, responsive slider plugin, responsive slider, responsive carousel, carousel slider, carousel slider worpdress, free slider plugin, wp slider, wp carousel, wordpress slider, wordpress carousel, slider and carousel, slider with thumbnails, thumbnails slider, rotator, image rotator, unlimited sliders, jquery slider, photo slider
 Requires at least: 3.5.1
 Tested up to: 4.1
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -130,6 +130,9 @@ Contact shop@chop-chop.org if you have any questions or wish to provide feedback
 
 
 == Changelog ==
+
+= 1.1.1 =
+FIX: Active slide links
 
 = 1.1.0 =
 ADD: Drag & drop slides reorder

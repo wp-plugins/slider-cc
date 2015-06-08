@@ -41,3 +41,13 @@
 .carouselcc.light .scc-pagination > a:hover {
   background: #d3d3d3!important;
 }
+
+.carouselcc.light .slides > li  {
+    border-color: transparent !important;
+		border-width: 2px !important;
+		border-style: solid !important;
+		margin-top: 0px;
+}
+.carouselcc.light .slides > li.scc-active  {
+    border-color: #F1F1F1  !important; 
+}

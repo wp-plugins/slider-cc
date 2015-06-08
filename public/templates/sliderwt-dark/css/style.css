@@ -41,7 +41,12 @@
 
 
 /*** Thumbnails ***/
-
-.sliderccth.dark .slides > li.scc-active:after {
-    border: 2px solid #191919!important;
+.sliderccth.dark .slides > li  {
+    border-color: transparent !important;
+		border-width: 2px !important;
+		border-style: solid !important;
+		margin-top: 0px;
+}
+.sliderccth.dark .slides > li.scc-active  {
+    border-color: #191919 !important; 
 }
