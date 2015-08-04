@@ -29,6 +29,10 @@ Slider CC is an easy way to create sliders and carousels matching your websiteâ€
 
 Choose between **CSS animate**, **jQuery.animate** and **velocity.js** for the best slider performance. Enable or disable mousewheel navigation, keyboard navigation and touch drag.
 
+**An inside look:**
+
+https://www.youtube.com/watch?v=EBTIV2CQ53w
+
 **Features**
 
 * Unlimited number of sliders
